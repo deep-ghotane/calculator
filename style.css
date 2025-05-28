@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #e0e5ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.wrapper {
+  height: 600px;
+  width: 400px;
+  /* background-color: white; */
+  /* box-shadow: 4px 5px 14px 1px #c2c2c2; */
+  border-radius: 20px;
+  display: flex;
+  gap: 20px;
+  background-color: #e0e5ec;
+  flex-direction: column;
+  justify-content: start;
+  overflow: hidden;
+  /* background-color: rgb(35, 35, 35); */
+  /* box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #fff; */
+}
+.neumorphic {
+  background: #e0e5ec;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+}
+
+.output {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 3rem;
+  color: #8d8d8d;
+  font-family: monospace;
+  height: 200px;
+}
+
+.btn-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 15px;
+  height: 380px;
+  padding: 20px;
+}
+
+.btn-body > .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e5ec;
+  border-radius: 20px;
+  color: #858585;
+  font-size: 1.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: 3px 3px 6px #a3b1c6, -3px -3px 6px #ffffff;
+}
+
+.special-btn {
+  background-color: #0b6cf352 !important;
+  box-shadow: 3px 3px 6px #8995a7, -3px -3px 6px #ffffff !important;
+}
+.special-btn:active {
+  box-shadow: inset 2px 2px 5px #788ca9 !important;
+}
+
+.btn-body > .btn:active {
+  cursor: pointer;
+  box-shadow: inset 2px 2px 5px #a3b1c6, inset -2px -2px 5px #ffffff;
+}
+
+.rowspan {
+  grid-row: span 2;
+}
+
+.colspan {
+  grid-column: span 2;
+}
+
+.lucky {
+  animation-name: gradient;
+  animation-duration: 1s;
+  animation-iteration-count: 10;
+  animation-timing-function: ease-in;
+}
+
+@keyframes gradient {
+  0% {
+    background: radial-gradient(#ff4242, #e2e2ff, #6edb87, #62c5cea8);
+  }
+
+  50% {
+    background: radial-gradient(#1ecd4d, #fffbe2, #dbba6e, #62c5cea8);
+  }
+
+  100% {
+    background: radial-gradient(#ff4242, #e2e2ff, #6edb87, #62c5cea8);
+  }
+}
