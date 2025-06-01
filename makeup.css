@@ -65,8 +65,16 @@ body {
   box-shadow: 3px 3px 6px #a3b1c6, -3px -3px 6px #ffffff;
 }
 
+.btn-c {
+  background-color: rgba(239, 12, 12, 0.37) !important;
+}
+
+.btn-b {
+  background-color: rgba(234, 172, 14, 0.404) !important;
+}
+
 .special-btn {
-  background-color: #0b6cf352 !important;
+  background-color: #0b6cf35c !important;
   box-shadow: 3px 3px 6px #8995a7, -3px -3px 6px #ffffff !important;
 }
 .special-btn:active {
@@ -76,6 +84,9 @@ body {
 .btn-body > .btn:active {
   cursor: pointer;
   box-shadow: inset 2px 2px 5px #a3b1c6, inset -2px -2px 5px #ffffff;
+}
+.btn-body > .btn:hover {
+  background-color: plum;
 }
 
 .rowspan {
